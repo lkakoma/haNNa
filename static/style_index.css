@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --box-background: #1c1c1c;
+    --input-background: #262626;
+    --input-border: #363636;
+    --button-color: #4a69bd; /* Azul/Roxo do botão do Instagram */
+    --purple-n: #8a3ab9; /* Roxo para o 'n' */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilização do Logo haNNa */
+.logo-container {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.logo-text {
+    color: var(--text-color);
+}
+
+.logo-n {
+    color: var(--purple-n);
+}
+
+/* Estilização da Caixa de Busca (Inspirada no Instagram) */
+.search-box {
+    background-color: var(--box-background);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.search-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-box input[type="text"] {
+    background-color: var(--input-background);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    color: var(--text-color);
+    padding: 12px 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-box input[type="text"]:focus {
+    border-color: var(--button-color);
+}
+
+.search-box input[type="submit"] {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.search-box input[type="submit"]:hover {
+    background-color: #5a7ac9;
+}
+
+.search-box input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Estilização de outros elementos */
+.search-box h1 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #aaa;
+}
+
+.search-box label {
+    display: none; /* Esconder o texto "Pesquisa:" se estiver no HTML original */
+}
+
+/* Ajuste para o texto "Pesquisa:" que está fora do input */
+.search-box form > * {
+    margin-bottom: 10px;
+}
+
+.search-box form > *:first-child {
+    margin-top: 0;
+}
+
+/* Estilização para o texto "Pesquisa:" que está no HTML original */
+.search-box form > :first-child {
+    color: #aaa;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+/* Efeito de brilho (opcional, mas divertido) */
+.search-box:hover {
+    box-shadow: 0 0 20px rgba(74, 105, 189, 0.5);
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .logo-container {
+        font-size: 3em; /* Reduz o tamanho da fonte do logo */
+        margin-bottom: 20px;
+    }
+
+    .search-box {
+        padding: 30px 20px; /* Reduz o padding interno da caixa */
+        max-width: 100%; /* Permite que a caixa ocupe a largura total */
+        border: none; /* Remove a borda em telas muito pequenas para um visual mais limpo */
+        box-shadow: none; /* Remove a sombra em telas muito pequenas */
+        background-color: var(--background-color); /* Fundo da caixa igual ao fundo do body */
+    }
+
+    .search-box:hover {
+        box-shadow: none; /* Remove o efeito de brilho no hover em telas pequenas */
+    }
+
+    .search-box input[type="text"] {
+        padding: 15px 10px; /* Aumenta o padding do input para facilitar o toque */
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_dados.css') }}">
+</head>
+<body>
+    <div class="logo-container">
+        <span class="logo-text">ha</span><span class="logo-n">N</span><span class="logo-text">Na</span>
+    </div>
+    <div class="data-container">
+    <h1>v1.0</h1>
+    <h1>Dados Do Jogador</h1>
+    <h1>Nome: {{nome}}</h1>
+    <h1>Nível: {{nivel}}</h1>
+    <h1>Troféus: {{trofeus}}</h1>
+    <h1>Clan: {{nome_clan}}</h1>
+    <a href="/">Voltar</a>
+    </div>
+</body>
+</html>

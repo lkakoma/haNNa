@@ -1,0 +1,1 @@
+- Todo o código feito a mão apenas o css foi solicitado por AI.

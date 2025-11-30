@@ -1,1 +1,1 @@
-- Todo o código feito a mão apenas o css foi solicitado por AI.
+- O código implementa uma API Flask que busca dados de jogadores no Clash Royale usando API.

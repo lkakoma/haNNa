@@ -1,1 +1,1 @@
-- O código implementa uma API Flask que busca dados de jogadores no Clash Royale usando API.
+- Busca e filtra dados essênciais do jogador
